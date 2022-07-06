@@ -34,3 +34,5 @@ jsconfig.json
 
 test/testdb.sqlite
 .nyc_output
+
+.env

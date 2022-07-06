@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "cpy ./dataset.sqlite test --rename=testdb.sqlite && npm run mocha && semistandard",
-    "start": "node src/",
+    "start": "node src/index.js",
     "mocha": "cross-env NODE_ENV=test nyc --cache mocha test/ --recursive --timeout=5000 --check-leaks",
     "dev": "nodemon",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
@@ -29,6 +29,7 @@
     "compression": "^1.6.2",
     "cors": "^2.7.1",
     "degrees-radians": "^1.0.3",
+    "dotenv": "^16.0.1",
     "feathers": "^2.0.1",
     "feathers-configuration": "^0.2.3",
     "feathers-errors": "^2.4.0",
